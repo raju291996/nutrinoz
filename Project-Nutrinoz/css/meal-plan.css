@@ -1,0 +1,140 @@
+.n2-dp{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background: #dedede;
+}
+
+.n2-od{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    box-shadow: 0px 0px 4px #999;
+}
+.n2-id{
+    height: 300px;
+}
+.n2-id .nutri{
+    font-size: 16px;
+    font-family: Raleway, sans-serif;
+    display: inline-block;
+    min-width: 80px;
+    color: #57b63a;
+    font-weight: 700;
+}
+.n2-id .i-data{
+    color: #57b63a;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
+.n2-id .n2-all-info{
+    padding-top: 90px;
+}
+.n2-id .more-info{
+    display: block;
+    padding-top: 40px;
+}
+.n2-id .more-info a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    background: #57b63a;
+    font-weight: 700;
+    outline: none;
+    box-shadow: 0px 5px 4px #999;
+}
+.n2-id .more-info a:hover{
+    background: #45912e;
+    transition: all 0.3s;
+}
+
+.n3-dp{
+    width: 100%;
+    padding: 50px 0px;
+    background: #dedede;
+}
+.n3-od{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.n3-dp .meal-name{
+    width: 100%;
+    margin-bottom: 40px;
+    color: #57b63a;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
+.n3-dp .meal-name div:nth-child(4) {
+    text-align: right;
+}
+.n3-dp .meal-detail{
+    
+}
+.n3-dp .meal-no{
+    border: 1px solid #d9d9d9;
+    padding-bottom: 0px;
+    color: #57b63a;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
+.n3-dp .meal-no div.padd {
+    padding-top: 20px;
+}
+.n3-dp .meal-no img{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.n3-dp .meal-no div:nth-child(4) {
+    text-align: right;
+}
+.n3-dp .meal-1{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 50px;
+    background: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 4px #999;
+}
+.n3-id .nutri{
+    font-size: 16px;
+    font-family: Raleway, sans-serif;
+    display: inline-block;
+    min-width: 80px;
+    color: #57b63a;
+    font-weight: 700;
+}
+.n3-id .i-data{
+    color: #57b63a;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
+#specMeal{
+    width: 200px;
+    height: 120px;
+    margin-top: 60px;
+    padding-left: 30px;
+}
+@media only screen and (max-width:768px){
+    .meal-pie{
+        width: 100%;
+    }
+    #specMeal{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        width: 170px;
+    }
+}
+
+
+
+
+
+

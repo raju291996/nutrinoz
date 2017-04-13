@@ -1,0 +1,333 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+body {
+	font-family: montserrat, arial, verdana;
+}
+.diet-p-bar{
+	max-width:940px;
+	margin:10px auto;
+	border: 0px solid red;
+}
+#msform {
+	max-width: 940px;
+	margin:50px auto;
+	text-align:center;
+	position: relative;
+}
+#msform fieldset {
+	width: 80%;
+	margin: 0px 10%;
+	padding:20px 30px;
+	box-sizing:border-box;
+	box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.4);
+	border:0;
+	background: white;
+	border-radius: 3px;
+	position: relative;
+	
+}
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+#msform .action-button {
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0px;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 30px 5px;
+	outline:none;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+.fs-title {
+	font-size: 15px;
+	color: #27AE60;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+#progressbar {
+	margin-bottom: 30px;
+	counter-reset: step;
+	overflow: hidden;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+#progressbar li {
+	list-style-type: none;
+	color: #999;
+	text-transform: uppercase;
+	font-size: 9px;
+	width:16.66%;
+	float:left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width:20px;
+	background: #999;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #fff;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+#progressbar li:after {
+	content: '';
+	width:100%;
+	background: #999;
+	height: 2px;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1;
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #27AE60;
+	color: white;
+}
+
+#msform .fs1 label div{
+	margin:30px 20px;
+	border-radius: 3px;
+	border:1px solid #27AE60;
+	opacity:0.8;
+    cursor: pointer;
+}
+#msform .fs1 label div img{
+    max-width: 100%;
+}
+#msform .fs2 label, #msform .fs4 label, #msform .fs5 label{
+	text-align:initial;
+	width: 80%;
+	margin: 0px 10%;
+	
+}
+#msform .fs2 .check-pa,  #msform .fs4 .check-pa,  #msform .fs5 .check-pa{
+	width:100%;
+	background: url(../images/n-welcome-bg.jpg);
+	color:#fff;
+	line-height:40px;
+	text-align: center;
+	font-weight: 400;
+	font-family: montserrat;
+	border: 0px solid #57b63a;
+    cursor: pointer;
+}
+#msform input[type=radio]{
+	opacity: 0;
+	width: 6px;
+	height: 6px;
+}
+#msform input[type=radio]:checked+div.check-pa{
+    background: #27AE60;
+}
+#msform .fs1 input[type=radio]:checked+div{
+    border: 1.5px solid #27AE60;
+    opacity: 1;
+}
+#msform .fs3 .fs-title{
+	margin-bottom:30px;
+}
+#msform .fs3 input[type=text], #msform .fs8 input[type=text] {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 40%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+	padding:20px 10px;
+	margin: 10px 4.8%;
+	outline: none;
+}
+#msform .fs3 input[type=text]:focus, #msform .fs8 input[type=text]:focus {
+	border: 1px solid #57b63a;
+}
+#msform .fs6 label, #msform .fs7 label{
+	text-align:initial;
+	width: 80%;
+	margin: 10px 10%;
+	
+}
+#msform .bad-hab{
+	width:90%;
+	background-image: url(../images/n-welcome-bg.jpg);
+	color:#fff;
+	line-height:40px;
+	text-align: center;
+	font-weight: 400;
+	font-family: montserrat;
+	border: 0px solid #57b63a;
+	float: left;
+}
+#msform input[type=checkbox]{
+	width: 10%;
+	height: 40px;
+	float: right;
+	position: relative;
+	top:-4px;
+	left: -6px;
+	border: 1px solid #27ae60;
+	-webkit-appearance: none;
+	display: inline-block;
+	background-color: #27AE60;
+	border-radius: 0px;
+	outline: none;
+}
+#msform input[type=checkbox]:checked:after {
+	content: '\2714';
+	font-size: 32px;
+	position: absolute;
+	top: -4px;
+	left: 12px;
+	color: #fff;
+}
+#msform .fs8 .fs-subtitle{
+	margin-bottom: 30px;
+}
+
+/*----------------------diet-plan-final --------------------------------*/
+	
+.container-fluid{
+    
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url(../images/n-welcome-bg.jpg);
+    
+}
+.n1-d-f-content{
+    max-width: 940px;
+    margin: 50px auto;
+}
+.n1-d-f-content .plan{
+    text-align: center;
+}	
+.n1-d-f-content h1{
+    color: #fff;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+.n1-d-f-content a{
+    border: 0;
+    background: #55a43b;
+    padding: 10px 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    word-spacing: 3px;
+    margin-top: 40px;
+}
+.n1-d-f-content a:hover{
+    opacity: 0.8;
+    
+}
+.bmi-section, .calorie-section, .idwt-section{
+    width: 100%;
+    padding: 30px 0px;
+}
+.bmi-section .bmi, .calorie-section .calorie, .idwt-section .idwght{
+    max-width: 940px;
+    margin: 0px auto;
+}
+.bmi-section .title, .calorie-section .title, .idwt-section .title{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 700;
+}
+
+.bmi-section h5, .calorie-section h5, .idwt-section h5{
+    color: #444;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.bmi-section .div3, .calorie-section .div3, .idwt-section .div3{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #999;
+}
+.bmi-section .div-b, .calorie-section .div-c, .idwt-section .div-i{
+    
+}
+.bmi-section, .calorie-section{
+    border-bottom: 1px solid #f0f0f0;
+}
+.idwt-section{
+    margin-bottom: 30px;
+}
+.calorie-section{
+    background: #f0f0f0;
+}
+.calorie-section .cal-result, .idwt-section .iw-result, .bmi-section .bmi-stnd{
+    color: grey;
+}
+
+.p-n2-diet{
+    
+}
+.p-n2-diet .msform .gender{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    #msform fieldset{
+        width: 100%;
+        margin: 0px auto;
+    }
+    #msform .fs2 label{
+        margin-left: 0;
+        margin-right: 0;
+    }  
+}
+@media only screen and (max-width: 600px){
+    #msform .fs7 label{
+        width: 100%;
+        margin: 0px auto;
+    }
+    #msform .bad-hab{
+        width: 88%;
+    }
+    #msform input[type=checkbox]{
+        width: 12%;
+    }
+    #msform .fs3 input[type=text]{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 450px){
+    #msform .bad-hab{
+        width: 83%;
+    }
+    #msform input[type=checkbox]{
+        width: 17%;
+    }
+    #msform .fs3 input[type=text]{
+        width: 80%;
+    }
+    #progressbar li .diet-sm-ia{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
